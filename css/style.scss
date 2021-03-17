@@ -1,0 +1,136 @@
+/************************
+google font
+************************/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+/************************
+variables
+************************/
+$primary: #11243a;
+$fontSize: 16px;
+$padding: 50px 0;
+$white: white;
+/************************
+mixins
+************************/
+@mixin flex($justify,$align,$direction) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+/************************
+bacis styles
+************************/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: $fontSize;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 70%;
+    margin: auto;
+}
+/************************
+top bar
+************************/
+.topBar {
+    background: $primary;
+    color: $white;
+    padding: 10px 0;
+    @media(max-width: 767px) {
+        text-align: center;
+    }
+    .container {
+        @include flex(space-between,center,row);
+        @media(max-width: 767px) {
+            @include flex(center,center,column);
+            line-height: 3;
+        }
+        a {
+            color: $white;
+            font-size: 1.2rem;
+            font-weight: 800;
+        }
+    }
+}
+/************************
+header
+************************/
+header {
+    // nav bar
+    nav {
+        @include flex(space-between,center,row);
+        padding: $padding;
+        @media(max-width: 767px) {
+            @include flex(center,center,column);
+        }
+        .logo {
+            a {
+                color: $primary;
+                font-weight: 600;
+                font-size: 1.5rem;
+            }
+            @media(max-width: 767px) {
+                margin-bottom: 30px;
+            }
+        }
+        ul {
+            @include flex(space-between,center,row);
+            @media(max-width: 767px) {
+                @include flex(space-between,center,column);
+            }
+            li {
+                margin-left: 60px;
+                @media(max-width: 767px) {
+                    margin-bottom: 20px;
+                    margin-left: 0px;
+                }
+                a {
+                    color: $primary;
+                    font-weight: 600;
+                    font-size: 1.5rem;
+                    &:hover {
+                        color: $white;
+                        background: $primary;
+                        padding: 15px 15px;
+                    }
+                }
+            }
+        }
+    }
+    // hgroup
+    hgroup {
+        background: linear-gradient(rgba($primary,.6),rgba($primary,.6)), url(../img/header.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 50vh;
+        color: $white;
+        text-align: center;
+        @include flex(center,center,column);
+        h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            @media(max-width: 767px) {
+                font-size: 3rem;
+            }
+        }
+        p {
+            font-size: 1.1rem;
+            @media(max-width: 767px) {
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
