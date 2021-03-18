@@ -1,7 +1,8 @@
 /************************
 google font
 ************************/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /************************
 variables
 ************************/
@@ -19,6 +20,25 @@ mixins
     align-items: $align;
     flex-direction: $direction;
 }
+@mixin btn {
+    padding: 10px 30px;
+    border: 3px solid $primary;
+    color: $primary;
+    background: transparent;
+    font-size: 1.3rem;
+    &:hover {
+        background: $primary;
+        color: white;
+    }
+}
+@mixin hr($color) {
+    background: $color;
+    width: 150px;
+    padding: 1px 0;
+    margin: auto auto 20px auto;
+
+    content: "";
+}
 /************************
 bacis styles
 ************************/
@@ -30,7 +50,8 @@ bacis styles
 body {
     font-size: $fontSize;
     line-height: 1.6;
-    font-family: 'Open Sans', sans-serif;
+  //  font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 ul {
     list-style-type: none;
@@ -132,5 +153,95 @@ header {
                 font-size: 0.9rem;
             }
         }
+    }
+}
+/************************
+about us
+************************/
+.aboutUs {
+    padding: $padding;
+    article {
+        h2 {
+            text-align: center;
+            font-size: 3rem;
+            color: $primary;
+        }
+        hr {
+            @include hr($primary);
+        }
+        p {
+            text-align: justify;
+            line-height: 1.8;
+            word-spacing: 3px;
+            img {
+                float: left;
+                max-width: 200px;
+                margin-right: 20px;
+            }
+        }
+    }
+}
+/************************
+contact form
+************************/
+.contactForm {
+            padding: $padding;
+            flex: 0 0 50%;
+            height: 100%;
+
+            h2{
+                text-align: center;
+                font-size: 3rem;
+                color: $primary;
+            }
+            hr {
+                @include hr($primary);
+            }
+            form {
+                @include flex(space-between,center,column);
+                .input {
+                    width: 100%;
+                    @include flex(space-between,center,row);
+                    input {
+                        flex: 0 0 48%;
+                        margin-bottom: 20px;
+                        padding: 10px 0;
+                        padding-left: 10px;
+                        font-family: 'Playfair Display', serif;
+                        border: 3px solid $primary;
+                    }
+                }
+                textarea {
+                    width: 100%;
+                    margin-bottom: 20px;
+                    padding-left: 10px;
+                    padding-top: 10px;
+                    font-family: 'Playfair Display', serif;
+                    border: 3px solid $primary;
+                }
+                button {
+                    @include btn;
+                }
+            }
+}
+/************************
+map
+************************/
+.map {
+    iframe {
+        display: block;
+    }
+}
+
+/************************
+footer
+************************/
+footer {
+    background: $primary;
+    color: $white;
+    padding: 20px 0;
+    text-align: center;
+    p {
+        font-size: .8rem;
     }
 }

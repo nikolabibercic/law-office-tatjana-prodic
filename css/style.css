@@ -1,7 +1,7 @@
 /************************
 google font
 ************************/
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /************************
 variables
 ************************/
@@ -21,7 +21,7 @@ bacis styles
 body {
   font-size: 16px;
   line-height: 1.6;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Playfair Display', serif;
 }
 
 ul {
@@ -256,5 +256,154 @@ header hgroup p {
   header hgroup p {
     font-size: 0.9rem;
   }
+}
+
+/************************
+about us
+************************/
+.aboutUs {
+  padding: 50px 0;
+}
+
+.aboutUs article h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: #11243a;
+}
+
+.aboutUs article hr {
+  background: #11243a;
+  width: 150px;
+  padding: 1px 0;
+  margin: auto auto 20px auto;
+  content: "";
+}
+
+.aboutUs article p {
+  text-align: justify;
+  line-height: 1.8;
+  word-spacing: 3px;
+}
+
+.aboutUs article p img {
+  float: left;
+  max-width: 200px;
+  margin-right: 20px;
+}
+
+/************************
+contact form
+************************/
+.contactForm {
+  padding: 50px 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  height: 100%;
+}
+
+.contactForm h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: #11243a;
+}
+
+.contactForm hr {
+  background: #11243a;
+  width: 150px;
+  padding: 1px 0;
+  margin: auto auto 20px auto;
+  content: "";
+}
+
+.contactForm form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contactForm form .input {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.contactForm form .input input {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  padding-left: 10px;
+  font-family: 'Playfair Display', serif;
+  border: 3px solid #11243a;
+}
+
+.contactForm form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-family: 'Playfair Display', serif;
+  border: 3px solid #11243a;
+}
+
+.contactForm form button {
+  padding: 10px 30px;
+  border: 3px solid #11243a;
+  color: #11243a;
+  background: transparent;
+  font-size: 1.3rem;
+}
+
+.contactForm form button:hover {
+  background: #11243a;
+  color: white;
+}
+
+/************************
+map
+************************/
+.map iframe {
+  display: block;
+}
+
+/************************
+footer
+************************/
+footer {
+  background: #11243a;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: .8rem;
 }
 /*# sourceMappingURL=style.css.map */
