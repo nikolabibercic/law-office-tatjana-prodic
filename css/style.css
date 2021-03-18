@@ -291,15 +291,27 @@ about us
   margin-right: 20px;
 }
 
+@media (max-width: 767px) {
+  .aboutUs article p img {
+    float: none;
+    position: relative;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+}
+
 /************************
 contact form
 ************************/
 .contactForm {
   padding: 50px 0;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
   height: 100%;
+}
+
+@media (max-width: 767px) {
+  .contactForm {
+    padding: 10px 0;
+  }
 }
 
 .contactForm h2 {
@@ -353,6 +365,26 @@ contact form
           flex-direction: row;
 }
 
+@media (max-width: 767px) {
+  .contactForm form .input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .contactForm form .input input {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 48%;
@@ -362,6 +394,12 @@ contact form
   padding-left: 10px;
   font-family: 'Playfair Display', serif;
   border: 3px solid #11243a;
+}
+
+@media (max-width: 767px) {
+  .contactForm form .input input {
+    width: 100%;
+  }
 }
 
 .contactForm form textarea {
@@ -384,6 +422,12 @@ contact form
 .contactForm form button:hover {
   background: #11243a;
   color: white;
+}
+
+@media (max-width: 767px) {
+  .contactForm form button {
+    margin-bottom: 20px;
+  }
 }
 
 /************************

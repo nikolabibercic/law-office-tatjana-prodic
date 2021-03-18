@@ -177,6 +177,12 @@ about us
                 float: left;
                 max-width: 200px;
                 margin-right: 20px;
+                @media(max-width: 767px) {
+                    float: none;
+                    position: relative;
+                    margin-bottom: 20px;
+                    max-width: 100%;
+                }
             }
         }
     }
@@ -186,9 +192,10 @@ contact form
 ************************/
 .contactForm {
             padding: $padding;
-            flex: 0 0 50%;
             height: 100%;
-
+            @media(max-width: 767px) {
+                padding: 10px 0;
+            }
             h2{
                 text-align: center;
                 font-size: 3rem;
@@ -202,6 +209,9 @@ contact form
                 .input {
                     width: 100%;
                     @include flex(space-between,center,row);
+                    @media(max-width: 767px) {
+                        @include flex(space-between,center,column);
+                    }
                     input {
                         flex: 0 0 48%;
                         margin-bottom: 20px;
@@ -209,6 +219,9 @@ contact form
                         padding-left: 10px;
                         font-family: 'Playfair Display', serif;
                         border: 3px solid $primary;
+                        @media(max-width: 767px) {
+                            width: 100%;
+                        }
                     }
                 }
                 textarea {
@@ -221,6 +234,9 @@ contact form
                 }
                 button {
                     @include btn;
+                    @media(max-width: 767px) {
+                        margin-bottom: 20px;
+                    }
                 }
             }
 }
