@@ -217,7 +217,7 @@ header hgroup {
   background: linear-gradient(rgba(17, 36, 58, 0.6), rgba(17, 36, 58, 0.6)), url(../img/header.jpg);
   background-position: center;
   background-size: cover;
-  height: 50vh;
+  height: 70vh;
   color: white;
   text-align: center;
   display: -webkit-box;

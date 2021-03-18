@@ -136,7 +136,7 @@ header {
         background: linear-gradient(rgba($primary,.6),rgba($primary,.6)), url(../img/header.jpg);
         background-position: center;
         background-size: cover;
-        height: 50vh;
+        height: 70vh;
         color: $white;
         text-align: center;
         @include flex(center,center,column);
