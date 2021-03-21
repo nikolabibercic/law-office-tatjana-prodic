@@ -204,6 +204,8 @@ header nav ul li a {
   color: #11243a;
   font-weight: 600;
   font-size: 1.5rem;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 header nav ul li a:hover {
@@ -298,6 +300,137 @@ about us
     margin-bottom: 20px;
     max-width: 100%;
   }
+}
+
+/************************
+work fields
+************************/
+.workFields {
+  padding: 50px 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 36, 58, 0.8)), to(rgba(17, 36, 58, 0.8))), url(../img/work-info.jpg);
+  background: linear-gradient(rgba(17, 36, 58, 0.8), rgba(17, 36, 58, 0.8)), url(../img/work-info.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.workFields h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+}
+
+.workFields hr {
+  background: white;
+  width: 150px;
+  padding: 1px 0;
+  margin: auto auto 20px auto;
+  content: "";
+}
+
+.workFields .container {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media (max-width: 767px) {
+  .workFields .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.workFields .container article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 23%;
+          flex: 0 0 23%;
+  margin-bottom: 15px;
+  background: #11243a;
+  padding: 30px 0;
+}
+
+@media (max-width: 767px) {
+  .workFields .container article {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    padding: 30px 50px;
+  }
+}
+
+.workFields .container article i {
+  color: white;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.workFields .container article h4 {
+  font-size: 1rem;
+  color: white;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+}
+
+.workFields .container article:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
 }
 
 /************************
@@ -431,6 +564,96 @@ contact form
 }
 
 /************************
+recommendation
+************************/
+.recommendation {
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.recommendation h2 {
+  font-size: 3rem;
+  color: #11243a;
+}
+
+.recommendation hr {
+  background: #11243a;
+  width: 150px;
+  padding: 1px 0;
+  margin: auto auto 20px auto;
+  content: "";
+  margin-bottom: 30px;
+}
+
+.recommendation article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media (max-width: 767px) {
+  .recommendation article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.recommendation article div {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+}
+
+@media (max-width: 767px) {
+  .recommendation article div {
+    margin-bottom: 20px;
+  }
+}
+
+.recommendation article div img {
+  width: 100%;
+}
+
+/************************
 map
 ************************/
 .map iframe {
@@ -444,7 +667,116 @@ footer {
   background: #11243a;
   color: white;
   padding: 20px 0;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .contactInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-bottom: 60px;
+  padding-top: 20px;
+}
+
+@media (max-width: 767px) {
+  footer .contactInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+footer .contactInfo article {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 32%;
+          flex: 0 0 32%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 767px) {
+  footer .contactInfo article {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    margin-bottom: 30px;
+  }
+}
+
+footer .contactInfo article h3 {
+  font-size: 1.7rem;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  footer .contactInfo article h3 {
+    font-size: 1.4rem;
+  }
+}
+
+footer .contactInfo article hr {
+  background: white;
+  width: 50px;
+  padding: 1px 0;
+  margin: auto auto 20px auto;
+  content: "";
+}
+
+@media (max-width: 767px) {
+  footer .contactInfo article hr {
+    margin-bottom: 5px;
+  }
 }
 
 footer p {

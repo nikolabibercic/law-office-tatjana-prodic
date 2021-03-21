@@ -10,6 +10,7 @@ $primary: #11243a;
 $fontSize: 16px;
 $padding: 50px 0;
 $white: white;
+$transition: .5s ease;
 /************************
 mixins
 ************************/
@@ -31,12 +32,11 @@ mixins
         color: white;
     }
 }
-@mixin hr($color) {
+@mixin hr($color,$width: 150px) {
     background: $color;
-    width: 150px;
+    width: $width;
     padding: 1px 0;
     margin: auto auto 20px auto;
-
     content: "";
 }
 /************************
@@ -122,6 +122,7 @@ header {
                     color: $primary;
                     font-weight: 600;
                     font-size: 1.5rem;
+                    transition: $transition;
                     &:hover {
                         color: $white;
                         background: $primary;
@@ -188,6 +189,57 @@ about us
     }
 }
 /************************
+work fields
+************************/
+.workFields {
+    padding: $padding;
+    background: linear-gradient(rgba($primary,.8),rgba($primary,.8  )), url(../img/work-info.jpg);
+    background-position: center;
+    background-size: cover;
+    color: $white;
+    @include flex(space-between,center,column);
+    h2 {
+        text-align: center;
+        font-size: 3rem;
+        color: $white;
+    }
+    hr {
+        @include hr($white,150px); 
+    }
+    .container {
+        margin-top: 30px;
+        @include flex(space-between,center,row);
+        @media(max-width: 767px) {
+            @include flex(space-between,center,column);
+        }
+        article {
+            @include flex(space-between,center,column);
+            flex: 0 0 23%;
+            margin-bottom: 15px;
+            background: $primary;
+            padding: 30px 0;
+            @media(max-width: 767px) {
+                flex: 0 0 100%;
+                padding: 30px 50px;
+            }
+            i {
+                color: $white;
+                font-size: 50px;
+                margin-bottom: 30px;
+            }
+            h4 {
+                font-size: 1rem;
+                color: $white;
+                word-spacing: 5px;
+                letter-spacing: 1px;
+            }
+            &:hover {
+                transform: scale(1.1,1.1);
+            }
+        }
+    }
+}
+/************************
 contact form
 ************************/
 .contactForm {
@@ -241,6 +293,36 @@ contact form
             }
 }
 /************************
+recommendation
+************************/
+.recommendation {
+    padding: 50px 0;
+    @include flex(space-between,center,column);
+    h2 {
+        font-size: 3rem;
+        color: $primary;
+    }
+    hr {
+        @include hr($primary);
+        margin-bottom: 30px;
+    }
+    article {
+        @include flex(space-between,center,row);
+        @media(max-width: 767px) {
+            @include flex(space-between,center,column);
+        }
+        div {
+            flex: 0 0 48%;
+            @media(max-width: 767px) {
+                margin-bottom: 20px;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+/************************
 map
 ************************/
 .map {
@@ -256,7 +338,36 @@ footer {
     background: $primary;
     color: $white;
     padding: 20px 0;
-    text-align: center;
+    @include flex(space-between,center,column);
+    .contactInfo {
+        @include flex(space-between,center,row);
+        @media(max-width: 767px) {
+            @include flex(space-between,center,column);
+        }
+        padding-bottom: 60px;
+        padding-top: 20px;
+        article {
+            flex: 0 0 32%;
+            @include flex(space-between,center,column);
+            @media(max-width: 767px) {
+                flex: 0 0 100%;
+                margin-bottom: 30px;
+            }
+            h3{
+                font-size: 1.7rem;
+                color: $white;
+                @media(max-width: 767px) {
+                    font-size: 1.4rem;
+                }
+            }
+            hr {
+                @include hr($white,50px);  
+                @media(max-width: 767px) {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
     p {
         font-size: .8rem;
     }
