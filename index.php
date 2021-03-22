@@ -13,6 +13,11 @@
     <section class="topBar">
         <div class="container">
             <a href="mailto:nikolabibercic@gmail.com"><i class="fas fa-envelope">&nbsp;proba@gmail.com</i></a>
+            <ul>
+                <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+            </ul>
             <a href="tel:+38163666555"><i class="fas fa-phone-alt">&nbsp;+381 63 666 555</i></a>
         </div>
     </section>
@@ -138,6 +143,11 @@
                 <p>Subota - 08:30/14:00</p>
             </article>
         </section>
+        <ul>
+            <li><a href=""><i class="fab fa-facebook"></i></a></li>
+            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+        </ul>
         <p>&copy; Advokatska kancelarija Tatjane Prodić</p>
     </footer>
 
