@@ -126,6 +126,10 @@ top bar
 /************************
 header
 ************************/
+header {
+  margin-bottom: 50px;
+}
+
 header nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -425,9 +429,9 @@ work fields
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 23%;
-          flex: 0 0 23%;
-  margin-bottom: 15px;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+  margin-bottom: 30px;
   background: #11243a;
   padding: 30px 0;
 }
@@ -443,7 +447,7 @@ work fields
 
 .workFields .container article i {
   color: white;
-  font-size: 50px;
+  font-size: 90px;
   margin-bottom: 30px;
 }
 
@@ -452,6 +456,7 @@ work fields
   color: white;
   word-spacing: 5px;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 .workFields .container article:hover {
@@ -682,6 +687,10 @@ recommendation
 /************************
 map
 ************************/
+.map {
+  padding-top: 50px;
+}
+
 .map iframe {
   display: block;
 }

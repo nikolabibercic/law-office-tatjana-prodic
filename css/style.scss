@@ -100,6 +100,7 @@ header
 ************************/
 header {
     // nav bar
+    margin-bottom: 50px;
     nav {
         @include flex(space-between,center,row);
         padding: $padding;
@@ -223,8 +224,8 @@ work fields
         }
         article {
             @include flex(space-between,center,column);
-            flex: 0 0 23%;
-            margin-bottom: 15px;
+            flex: 0 0 48%;
+            margin-bottom: 30px;
             background: $primary;
             padding: 30px 0;
             @media(max-width: 767px) {
@@ -233,7 +234,7 @@ work fields
             }
             i {
                 color: $white;
-                font-size: 50px;
+                font-size: 90px;
                 margin-bottom: 30px;
             }
             h4 {
@@ -241,6 +242,7 @@ work fields
                 color: $white;
                 word-spacing: 5px;
                 letter-spacing: 1px;
+                text-align: center;
             }
             &:hover {
                 transform: scale(1.1,1.1);
@@ -335,6 +337,7 @@ recommendation
 map
 ************************/
 .map {
+    padding-top: 50px;
     iframe {
         display: block;
     }
