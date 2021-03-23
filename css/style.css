@@ -177,7 +177,7 @@ header nav .logo a {
 
 @media (max-width: 767px) {
   header nav .logo {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
 }
 
@@ -220,7 +220,7 @@ header nav ul {
 }
 
 header nav ul li {
-  margin-left: 60px;
+  margin-left: 40px;
 }
 
 @media (max-width: 767px) {
@@ -236,6 +236,7 @@ header nav ul li a {
   font-size: 1.5rem;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+  text-shadow: 0px 0px 1px #11243a;
 }
 
 header nav ul li a:hover {
@@ -271,7 +272,7 @@ header hgroup {
 
 header hgroup h1 {
   font-size: 4rem;
-  font-weight: 800;
+  font-weight: 900;
 }
 
 @media (max-width: 767px) {
@@ -288,6 +289,26 @@ header hgroup p {
   header hgroup p {
     font-size: 0.9rem;
   }
+}
+
+/************************
+logg in success message
+************************/
+.logInSuccess {
+  text-align: center;
+  background: green;
+  color: white;
+  max-width: 50%;
+}
+
+/************************
+logg in unsuccess message
+************************/
+.logInUnsuccess {
+  text-align: center;
+  background: red;
+  color: white;
+  max-width: 50%;
 }
 
 /************************
@@ -434,6 +455,9 @@ work fields
   margin-bottom: 30px;
   background: #11243a;
   padding: 30px 0;
+  border: 1px solid white;
+  -webkit-box-shadow: 0px 0px 10px white;
+          box-shadow: 0px 0px 10px white;
 }
 
 @media (max-width: 767px) {
@@ -590,6 +614,86 @@ contact form
 
 @media (max-width: 767px) {
   .contactForm form button {
+    margin-bottom: 20px;
+  }
+}
+
+/************************
+log in form
+************************/
+.logInForm {
+  padding: 50px 0;
+  height: 100%;
+}
+
+@media (max-width: 767px) {
+  .logInForm {
+    padding: 10px 0;
+  }
+}
+
+.logInForm h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: #11243a;
+}
+
+.logInForm hr {
+  background: #11243a;
+  width: 150px;
+  padding: 1px 0;
+  margin: auto auto 20px auto;
+  content: "";
+}
+
+.logInForm form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.logInForm form input {
+  width: 50%;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  padding-left: 10px;
+  font-family: 'Playfair Display', serif;
+  border: 3px solid #11243a;
+}
+
+@media (max-width: 767px) {
+  .logInForm form input {
+    width: 100%;
+  }
+}
+
+.logInForm form button {
+  padding: 10px 30px;
+  border: 3px solid #11243a;
+  color: #11243a;
+  background: transparent;
+  font-size: 1.3rem;
+}
+
+.logInForm form button:hover {
+  background: #11243a;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .logInForm form button {
     margin-bottom: 20px;
   }
 }

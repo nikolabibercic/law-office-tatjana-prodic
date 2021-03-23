@@ -114,7 +114,7 @@ header {
                 font-size: 1.5rem;
             }
             @media(max-width: 767px) {
-                margin-bottom: 30px;
+                margin-bottom: 60px;
             }
         }
         ul {
@@ -123,7 +123,7 @@ header {
                 @include flex(space-between,center,column);
             }
             li {
-                margin-left: 60px;
+                margin-left: 40px;
                 @media(max-width: 767px) {
                     margin-bottom: 20px;
                     margin-left: 0px;
@@ -133,6 +133,7 @@ header {
                     font-weight: 600;
                     font-size: 1.5rem;
                     transition: $transition;
+                    text-shadow: 0px 0px 1px $primary;
                     &:hover {
                         color: $white;
                         background: $primary;
@@ -153,7 +154,7 @@ header {
         @include flex(center,center,column);
         h1 {
             font-size: 4rem;
-            font-weight: 800;
+            font-weight: 900;
             @media(max-width: 767px) {
                 font-size: 3rem;
             }
@@ -165,6 +166,24 @@ header {
             }
         }
     }
+}
+/************************
+logg in success message
+************************/
+.logInSuccess {
+    text-align: center;
+    background: green;
+    color: $white;
+    max-width: 50%;
+}
+/************************
+logg in unsuccess message
+************************/
+.logInUnsuccess {
+    text-align: center;
+    background: red;
+    color: $white;
+    max-width: 50%;
 }
 /************************
 about us
@@ -228,6 +247,8 @@ work fields
             margin-bottom: 30px;
             background: $primary;
             padding: 30px 0;
+            border: 1px solid $white;
+            box-shadow: 0px 0px 10px $white;
             @media(max-width: 767px) {
                 flex: 0 0 100%;
                 padding: 30px 50px;
@@ -302,6 +323,44 @@ contact form
                     }
                 }
             }
+}
+/************************
+log in form
+************************/
+.logInForm {
+    padding: $padding;
+    height: 100%;
+    @media(max-width: 767px) {
+        padding: 10px 0;
+    }
+    h2{
+        text-align: center;
+        font-size: 3rem;
+        color: $primary;
+    }
+    hr {
+        @include hr($primary);
+    }
+    form {
+        @include flex(space-between,center,column);
+        input {
+            width: 50%;
+            margin-bottom: 20px;
+            padding: 10px 0;
+            padding-left: 10px;
+            font-family: 'Playfair Display', serif;
+            border: 3px solid $primary;
+            @media(max-width: 767px) {
+                width: 100%;
+            }
+        }
+        button {
+            @include btn;
+            @media(max-width: 767px) {
+                margin-bottom: 20px;
+            }
+        }
+    }
 }
 /************************
 recommendation
