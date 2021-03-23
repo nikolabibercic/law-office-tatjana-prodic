@@ -29,9 +29,15 @@
         <ul>
             <li><a href=""><i class="fab fa-facebook"></i></a></li>
             <li><a href=""><i class="fab fa-instagram"></i></a></li>
-            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://twitter.com/tanjicatajci?lang=en"><i class="fab fa-twitter"></i></a></li>
+            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
         </ul>
-        <p>&copy; Advokatska kancelarija Tatjane Prodić</p>
+        
+        <?php if(!isset($_SESSION['user'])): ?>
+            <p>&copy; Advokatska kancelarija Tatjane Prodić<a href="page-log-in.php"><i class="fas fa-sign-in-alt"></i></a></p>
+        <?php else: ?>
+            <p>&copy;Advokatska kancelarija Tatjane Prodić<a href="files/log-out.php"><i class="fas fa-sign-in-alt" style="color:green;"></i></a></p>
+        <?php endif; ?>     
     </footer>
 
 </body>

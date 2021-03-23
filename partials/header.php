@@ -17,7 +17,8 @@
             <ul>
                 <li><a href=""><i class="fab fa-facebook"></i></a></li>
                 <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://twitter.com/tanjicatajci?lang=en"><i class="fab fa-twitter"></i></a></li>
+                <li><a href=""><i class="fab fa-linkedin"></i></a></li>
             </ul>
             <a href="tel:+38163666555"><i class="fas fa-phone-alt">&nbsp;+381 63 666 555</i></a>
         </div>
@@ -34,13 +35,8 @@
                 <li><a href="index.php">Početna</a></li>
                 <li><a href="page-about-us.php">O nama</a></li>
                 <li><a href="page-work-fields.php">Oblast rada</a></li>
+                <li><a href="page-blog.php">Blog</a></li>    
                 <li><a href="page-contact.php">Kontakt</a></li>
-                <li><a href="page-blog.php">Blog</a></li>
-                <?php if(!isset($_SESSION['user'])): ?>
-                    <li><a href="page-log-in.php"><i class="fas fa-sign-in-alt"></i> Log in</a></li>
-                <?php else: ?>
-                    <li><a href="files/log-out.php"><i class="fas fa-sign-in-alt"></i> Log out</a></li>
-                <?php endif; ?>         
             </ul>
         </nav>
         <hgroup>

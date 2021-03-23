@@ -949,4 +949,9 @@ footer ul li a {
 footer p {
   font-size: .8rem;
 }
+
+footer p a {
+  color: white;
+  margin-left: 10px;
+}
 /*# sourceMappingURL=style.css.map */

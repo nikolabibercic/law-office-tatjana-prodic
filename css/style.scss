@@ -452,5 +452,9 @@ footer {
     }
     p {
         font-size: .8rem;
+        a {
+            color: $white;
+            margin-left: 10px;
+        }
     }
 }
