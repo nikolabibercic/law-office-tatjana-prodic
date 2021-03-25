@@ -10,6 +10,7 @@ $primary: #11243a;
 $fontSize: 16px;
 $padding: 50px 0;
 $white: white;
+$gold: #af9562;
 $transition: .5s ease;
 /************************
 mixins
@@ -21,15 +22,15 @@ mixins
     align-items: $align;
     flex-direction: $direction;
 }
-@mixin btn {
+@mixin btn($color: $primary, $colorHover: $white, $borderColor: $primary) {
     padding: 10px 30px;
-    border: 3px solid $primary;
-    color: $primary;
+    border: 3px solid $borderColor;
+    color: $color;
     background: transparent;
     font-size: 1.3rem;
     &:hover {
-        background: $primary;
-        color: white;
+        background: $color;
+        color: $colorHover;
     }
 }
 @mixin hr($color,$width: 150px) {
@@ -63,6 +64,9 @@ a {
     width: 70%;
     margin: auto;
 }
+i {
+    color: $gold;
+}
 /************************
 top bar
 ************************/
@@ -89,9 +93,18 @@ top bar
             li {
                 margin: 0 10px;
                 a {
-                    font-size: 2rem;
+                    font-size: 2rem;     
+                    color: red; 
+                }
+                &:hover {
+                    i {
+                        color: $white;
+                    }
                 }
             }
+        }
+        span {
+            color: $white;
         }
     }
 }
@@ -161,8 +174,15 @@ header {
         }
         p {
             font-size: 1.1rem;
+            margin-bottom: 30px;
             @media(max-width: 767px) {
                 font-size: 0.9rem;
+            }
+        }
+        button {
+            @include btn($white,$primary,$white);
+            @media(max-width: 767px) {
+                margin-bottom: 20px;
             }
         }
     }
@@ -382,7 +402,7 @@ recommendation
             @include flex(space-between,center,column);
         }
         div {
-            flex: 0 0 48%;
+            flex: 0 0 32%;
             @media(max-width: 767px) {
                 margin-bottom: 20px;
             }
@@ -401,7 +421,59 @@ map
         display: block;
     }
 }
-
+/************************
+blog
+************************/
+.blog {
+    @include flex(space-between,center,column);
+    button {
+        margin-bottom: 50px;
+        @include btn(green,$white,green);
+        @media(max-width: 767px) {
+            margin-bottom: 20px;
+        }
+    }
+    article {
+        @include flex(space-between,center,column);
+        flex: 0 0 100%;
+        border-bottom: 10px solid $primary;
+        margin-bottom: 50px;
+        img {
+            max-width: 100%;
+        }
+        h2 {
+            padding-top: 20px;
+        }
+        p {
+            font-size: 1.7rem;
+            text-align: justify;
+            padding: $padding;
+            @media(max-width: 767px) {
+                font-size: 1rem;
+                padding: 20px 20px;
+            }
+        }
+        div {
+            margin-bottom: 30px;
+            @include flex(space-between,center,row);
+            @media(max-width: 767px) {
+                @include flex(space-between,center,column);
+            }
+            .btnDeaktiviraj {
+                @include btn(red,$white,red);
+                @media(max-width: 767px) {
+                    margin-bottom: 20px;
+                }
+            }
+            .btnAktiviraj {
+                @include btn(green,$white,green);
+                @media(max-width: 767px) {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
 /************************
 footer
 ************************/
@@ -447,6 +519,11 @@ footer {
             a {
                 font-size: 2rem;
                 color: $white;
+            }
+            &:hover {
+                i {
+                    color: $white;
+                }
             }
         }
     }

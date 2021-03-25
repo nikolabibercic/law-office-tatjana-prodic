@@ -37,6 +37,10 @@ a {
   margin: auto;
 }
 
+i {
+  color: #af9562;
+}
+
 /************************
 top bar
 ************************/
@@ -121,6 +125,15 @@ top bar
 
 .topBar .container ul li a {
   font-size: 2rem;
+  color: red;
+}
+
+.topBar .container ul li:hover i {
+  color: white;
+}
+
+.topBar .container span {
+  color: white;
 }
 
 /************************
@@ -283,11 +296,31 @@ header hgroup h1 {
 
 header hgroup p {
   font-size: 1.1rem;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 767px) {
   header hgroup p {
     font-size: 0.9rem;
+  }
+}
+
+header hgroup button {
+  padding: 10px 30px;
+  border: 3px solid white;
+  color: white;
+  background: transparent;
+  font-size: 1.3rem;
+}
+
+header hgroup button:hover {
+  background: white;
+  color: #11243a;
+}
+
+@media (max-width: 767px) {
+  header hgroup button {
+    margin-bottom: 20px;
   }
 }
 
@@ -774,8 +807,8 @@ recommendation
 
 .recommendation article div {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 48%;
-          flex: 0 0 48%;
+      -ms-flex: 0 0 32%;
+          flex: 0 0 32%;
 }
 
 @media (max-width: 767px) {
@@ -797,6 +830,168 @@ map
 
 .map iframe {
   display: block;
+}
+
+/************************
+blog
+************************/
+.blog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blog button {
+  margin-bottom: 50px;
+  padding: 10px 30px;
+  border: 3px solid green;
+  color: green;
+  background: transparent;
+  font-size: 1.3rem;
+}
+
+.blog button:hover {
+  background: green;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .blog button {
+    margin-bottom: 20px;
+  }
+}
+
+.blog article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  border-bottom: 10px solid #11243a;
+  margin-bottom: 50px;
+}
+
+.blog article img {
+  max-width: 100%;
+}
+
+.blog article h2 {
+  padding-top: 20px;
+}
+
+.blog article p {
+  font-size: 1.7rem;
+  text-align: justify;
+  padding: 50px 0;
+}
+
+@media (max-width: 767px) {
+  .blog article p {
+    font-size: 1rem;
+    padding: 20px 20px;
+  }
+}
+
+.blog article div {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media (max-width: 767px) {
+  .blog article div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.blog article div .btnDeaktiviraj {
+  padding: 10px 30px;
+  border: 3px solid red;
+  color: red;
+  background: transparent;
+  font-size: 1.3rem;
+}
+
+.blog article div .btnDeaktiviraj:hover {
+  background: red;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .blog article div .btnDeaktiviraj {
+    margin-bottom: 20px;
+  }
+}
+
+.blog article div .btnAktiviraj {
+  padding: 10px 30px;
+  border: 3px solid green;
+  color: green;
+  background: transparent;
+  font-size: 1.3rem;
+}
+
+.blog article div .btnAktiviraj:hover {
+  background: green;
+  color: white;
+}
+
+@media (max-width: 767px) {
+  .blog article div .btnAktiviraj {
+    margin-bottom: 20px;
+  }
 }
 
 /************************
@@ -943,6 +1138,10 @@ footer ul li {
 
 footer ul li a {
   font-size: 2rem;
+  color: white;
+}
+
+footer ul li:hover i {
   color: white;
 }
 

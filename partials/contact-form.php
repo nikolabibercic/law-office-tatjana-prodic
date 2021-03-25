@@ -1,5 +1,5 @@
     <!-- contact form -->
-    <section class="contactForm container">
+    <section class="contactForm container" id="contactFormId">
             <h2>Kontakt</h2>
             <hr>
             <form action="">

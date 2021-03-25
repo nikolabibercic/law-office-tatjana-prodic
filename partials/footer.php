@@ -16,19 +16,19 @@
             <article>
                 <h3>Kontakt</h3>
                 <hr>
-                <p>Telefon: 063/555-999</p>
-                <p>Email: tatjana@gmail.com</p>
+                <p>Telefon: 064/383-7108</p>
+                <p>Email: tatjanaglusac1991@gmail.com</p>
             </article>
             <article>
                 <h3>Radno vreme</h3>
                 <hr>
-                <p>Ponedeljak/Petak - 08:30/16:30</p>
-                <p>Subota - 08:30/14:00</p>
+                <p>Ponedeljak/Petak</p>
+                <p>08:00/16:00</p>
             </article>
         </section>
         <ul>
-            <li><a href=""><i class="fab fa-facebook"></i></a></li>
-            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/advokatprodic"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://instagram.com/advokatska_kancelarija_prodic?igshid=crop7qcvv9y0"><i class="fab fa-instagram"></i></a></li>
             <li><a href="https://twitter.com/tanjicatajci?lang=en"><i class="fab fa-twitter"></i></a></li>
             <li><a href=""><i class="fab fa-linkedin"></i></a></li>
         </ul>
