@@ -190,7 +190,7 @@ header nav .logo a {
 
 @media (max-width: 767px) {
   header nav .logo {
-    margin-bottom: 60px;
+    margin-bottom: 20px;
   }
 }
 
@@ -807,8 +807,8 @@ recommendation
 
 .recommendation article div {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 32%;
-          flex: 0 0 32%;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
 }
 
 @media (max-width: 767px) {
@@ -902,12 +902,15 @@ blog
 
 .blog article h2 {
   padding-top: 20px;
+  font-size: 3rem;
+  color: #11243a;
 }
 
 .blog article p {
   font-size: 1.7rem;
   text-align: justify;
   padding: 50px 0;
+  color: #11243a;
 }
 
 @media (max-width: 767px) {

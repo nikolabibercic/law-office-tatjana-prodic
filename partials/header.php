@@ -32,7 +32,7 @@
         <!-- nav bar -->
         <nav class="container">
             <div class="logo">
-                <a href="index.php">Logo</a>
+                <a href="index.php"><img src="img/logo.png" alt=""></a>
             </div>
             <ul>
                 <li><a href="index.php">Početna</a></li>

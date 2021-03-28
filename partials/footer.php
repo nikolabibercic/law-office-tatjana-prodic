@@ -11,7 +11,7 @@
                 <h3>Adresa</h3>
                 <hr>
                 <p>Dimitrija Tucovića 2a</p>
-                <p>Novi Sad</p>
+                <p>21000 Novi Sad</p>
             </article>
             <article>
                 <h3>Kontakt</h3>
@@ -22,8 +22,8 @@
             <article>
                 <h3>Radno vreme</h3>
                 <hr>
-                <p>Ponedeljak/Petak</p>
-                <p>08:00/16:00</p>
+                <p>Ponedeljak-Petak</p>
+                <p>08:00-16:00</p>
             </article>
         </section>
         <ul>

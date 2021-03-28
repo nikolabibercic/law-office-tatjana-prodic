@@ -127,7 +127,7 @@ header {
                 font-size: 1.5rem;
             }
             @media(max-width: 767px) {
-                margin-bottom: 60px;
+                margin-bottom: 20px;
             }
         }
         ul {
@@ -402,7 +402,7 @@ recommendation
             @include flex(space-between,center,column);
         }
         div {
-            flex: 0 0 32%;
+            flex: 0 0 48%;
             @media(max-width: 767px) {
                 margin-bottom: 20px;
             }
@@ -439,15 +439,19 @@ blog
         border-bottom: 10px solid $primary;
         margin-bottom: 50px;
         img {
+
             max-width: 100%;
         }
         h2 {
             padding-top: 20px;
+            font-size: 3rem;
+            color: $primary;
         }
         p {
             font-size: 1.7rem;
             text-align: justify;
             padding: $padding;
+            color: $primary;
             @media(max-width: 767px) {
                 font-size: 1rem;
                 padding: 20px 20px;
