@@ -1,13 +1,24 @@
 <section class="blog container">
-        <button>Kreiraj post</button>
+    <?php if(isset($_SESSION['user'])): ?>
+        <form action="files/upload.php" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file">
+            <input type="text" name="header" placeholder="Naslov">
+            <textarea name="text" id="" cols="30" rows="10" placeholder="Tekst"></textarea>
+            <button type="submit" name="submit">Kreiraj post</button>
+        </form>
+    <?php endif; ?>   
+
+    <?php $result = $post->selectPosts(); foreach($result as $r): ?>
         <article>
-            <img src="img/divorce.jpg" alt="">
-            <h2>Razvodi</h2>
-            <hr>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id accusamus, amet odio dicta ut dignissimos ipsum aliquid ad quisquam! Labore maiores quam, excepturi accusamus qui dolorem aliquid doloremque nemo quis.</p>
-            <div>
-                <a href="" class="btnDeaktiviraj">Deaktiviraj</a>
-                <a href="" class="btnAktiviraj">Aktiviraj</a>
-            </div>
+            <img src=<?php echo 'uploads/'.$r->image_name; ?> alt="">
+            <h2><?php echo $r->header; ?></h2>
+            <p><?php echo nl2br($r->post_text); ?></p>
+            <?php if(isset($_SESSION['user'])): ?>
+                <div>
+                    <a href="" class="btnDeaktiviraj">Deaktiviraj</a>
+                    <a href="" class="btnAktiviraj">Aktiviraj</a>
+                </div>
+            <?php endif; ?>   
         </article> 
+    <?php endforeach; ?>
 </section>

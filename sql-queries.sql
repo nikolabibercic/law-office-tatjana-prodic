@@ -16,8 +16,9 @@ create table sf_post_status(
 
 CREATE TABLE posts(
 	post_id int AUTO_INCREMENT PRIMARY KEY,
-	heading varchar(250) character set utf8 not null,
-    post_text varchar(10000) character set utf8 not null,
+	header varchar(250) character set utf8 not null,
+    post_text varchar(1000) character set utf8 not null,
+	image_name varchar(100) character set utf8 not null,
 	post_status_id int not null,
     post_date datetime not null,
 	FOREIGN KEY (post_status_id) REFERENCES sf_post_status(post_status_id)

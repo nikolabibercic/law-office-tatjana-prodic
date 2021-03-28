@@ -426,26 +426,51 @@ blog
 ************************/
 .blog {
     @include flex(space-between,center,column);
-    button {
+    form {
+        @include flex(space-between,center,column);
         margin-bottom: 50px;
-        @include btn(green,$white,green);
-        @media(max-width: 767px) {
+        width: 100%;
+        input {
+            width: 100%;
             margin-bottom: 20px;
+            padding: 10px 0;
+            padding-left: 10px;
+            font-family: 'Playfair Display', serif;
+            border: 3px solid $primary;
+            @media(max-width: 767px) {
+                width: 100%;
+            }
+        }
+        textarea {
+            width: 100%;
+            margin-bottom: 20px;
+            padding-left: 10px;
+            padding-top: 10px;
+            font-family: 'Playfair Display', serif;
+            border: 3px solid $primary;
+        }
+        button {
+            @include btn;
+            @media(max-width: 767px) {
+                margin-bottom: 20px;
+            }
         }
     }
     article {
         @include flex(space-between,center,column);
-        flex: 0 0 100%;
+        width: 100%;
         border-bottom: 10px solid $primary;
         margin-bottom: 50px;
         img {
-
-            max-width: 100%;
+            width: 100%;
         }
         h2 {
             padding-top: 20px;
             font-size: 3rem;
             color: $primary;
+            @media(max-width: 767px) {
+                font-size: 1.7rem;
+            }
         }
         p {
             font-size: 1.7rem;
@@ -467,12 +492,14 @@ blog
                 @include btn(red,$white,red);
                 @media(max-width: 767px) {
                     margin-bottom: 20px;
+                    font-size: 1rem;
                 }
             }
             .btnAktiviraj {
                 @include btn(green,$white,green);
                 @media(max-width: 767px) {
                     margin-bottom: 20px;
+                    font-size: 1rem;
                 }
             }
         }

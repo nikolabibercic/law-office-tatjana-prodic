@@ -1,6 +1,6 @@
-<?php include "objects.php" ?>
+<?php include "objects.php"; ?>
 
-<?php include "partials/header.php" ?>
+<?php include "partials/header.php"; ?>
 
     <?php if(isset($_GET['userLogged']) && $_GET['userLogged']==true): ?>
         <div class="logInSuccess container">Log in successful</div>
@@ -20,4 +20,4 @@
             </form>
     </section>
 
-<?php include "partials/footer.php" ?>
+<?php include "partials/footer.php"; ?>
