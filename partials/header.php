@@ -18,10 +18,10 @@
         <div class="container">
             <a href="mailto:tatjanaglusac1991@gmail.com"><i class="fas fa-envelope">&nbsp;<span>tatjanaglusac1991@gmail.com</span></i></a>
             <ul>
-                <li><a href="https://www.facebook.com/advokatprodic"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="https://instagram.com/advokatska_kancelarija_prodic?igshid=crop7qcvv9y0"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="https://twitter.com/tanjicatajci?lang=en"><i class="fab fa-twitter"></i></a></li>
-                <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://www.facebook.com/advokatprodic" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://instagram.com/advokatska_kancelarija_prodic?igshid=crop7qcvv9y0" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://twitter.com/tanjicatajci?lang=en" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/advokatska-kancelarija-tatjane-prodi%C4%87/?viewAsMember=true" target="_blank"><i class="fab fa-linkedin"></i></a></li>
             </ul>
             <a href="tel:+381643837108"><i class="fas fa-phone-alt">&nbsp;<span>+38164 383 7108</span></i></a>
         </div>

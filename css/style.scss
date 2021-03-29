@@ -210,11 +210,41 @@ about us
 ************************/
 .aboutUs {
     padding: $padding;
-    article {
-        h2 {
-            text-align: center;
-            font-size: 3rem;
-            color: $primary;
+    color: $primary;
+    h2 {
+        text-align: center;
+        font-size: 3rem;
+        color: $primary;
+    }
+    hr {
+        @include hr($primary);
+    }
+    .first {
+        @include flex(space-between,center,row);
+        margin-bottom: 30px;
+        @media(max-width: 767px) {
+            @include flex(space-between,center,column);
+        }
+        img {
+            max-width: 25%;
+            @media(max-width: 767px) {
+                float: none;
+                position: relative;
+                margin-bottom: 20px;
+                max-width: 100%;
+            }
+        }
+        p {
+            flex: 0 0 70%;
+            text-align: justify;
+            line-height: 1.8;
+            word-spacing: 3px;
+        }
+    }
+    .second {
+        @include flex(center,center,column);
+        h3 {
+            font-size: 2rem;
         }
         hr {
             @include hr($primary);
@@ -223,17 +253,6 @@ about us
             text-align: justify;
             line-height: 1.8;
             word-spacing: 3px;
-            img {
-                float: left;
-                max-width: 200px;
-                margin-right: 20px;
-                @media(max-width: 767px) {
-                    float: none;
-                    position: relative;
-                    margin-bottom: 20px;
-                    max-width: 100%;
-                }
-            }
         }
     }
 }
@@ -308,6 +327,11 @@ contact form
             hr {
                 @include hr($primary);
             }
+            p {
+                font-size: 1rem;
+                color: $primary;
+                margin-bottom: 10px;
+            }  
             form {
                 @include flex(space-between,center,column);
                 .input {

@@ -1,8 +1,28 @@
     <!-- about us -->
     <section class="aboutUs container">
-        <article>
             <h2>O nama</h2>
             <hr>
-            <p><img src="img/about-us.jpg" alt="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, incidunt animi voluptas modi aut excepturi exercitationem odio cum natus voluptatem, impedit ut tempore sit atque dolores consectetur. Excepturi quae voluptatem aliquam incidunt expedita similique vel, ullam reprehenderit blanditiis, odio architecto quisquam saepe sequi, aspernatur sit necessitatibus temporibus id mollitia dolorem omnis in debitis sint quos! Soluta ea illum commodi tempora minus iste vitae voluptas corporis modi architecto libero, quod, impedit sunt, a nostrum iusto asperiores reprehenderit atque hic? Deleniti, tempore et cumque impedit voluptatum a vero fuga voluptatem quisquam corporis. Distinctio molestias consequatur libero consectetur nulla cupiditate eius qui fuga incidunt iusto eveniet laboriosam voluptate asperiores nostrum maiores, in placeat rerum quis facere, labore similique voluptates odit veniam! Nemo alias excepturi nesciunt beatae vitae quae et recusandae inventore minus aliquam, rem odio neque iste consequatur maxime totam delectus eaque mollitia sapiente eveniet corrupti! Voluptatibus, vitae! Sunt, quasi recusandae necessitatibus consequatur optio iure modi, repellat, veniam voluptatibus delectus nobis. Id quaerat labore eius porro! Consectetur neque quas, cumque ab eos sint perspiciatis voluptas aut sit harum atque soluta sapiente asperiores facere enim obcaecati, saepe corrupti veniam optio necessitatibus amet iusto doloremque nisi? Corrupti, dignissimos fugit id aliquid totam eius nisi qui amet officiis, assumenda alias velit nostrum dolor, officia minima eum quod quidem sed natus voluptas ducimus maiores molestiae impedit? Reiciendis distinctio enim non in, molestiae consequuntur itaque nam provident, magni deserunt vel fugiat dolorem accusantium laborum nesciunt incidunt fugit laboriosam eligendi tempora iste, inventore sunt sed cupiditate deleniti? Debitis pariatur aliquid asperiores, voluptatibus dicta, ipsa neque dolore tempora expedita eos laboriosam. Facere optio accusamus repellendus aperiam praesentium perferendis saepe excepturi. Ipsa veritatis eveniet nam aliquid, repellendus ratione hic pariatur similique nisi nulla dicta nemo autem non quas quod quae eum saepe quibusdam fuga accusamus minima a libero soluta corrupti. Voluptatum?</p>
-        </article> 
+            <article class="first">
+                <img src="img/about-us.jpg" alt="">
+                <p>
+                Advokatska kancelarija Tatjane Prodić osnovana je s ciljem pružanja sveobuhvatne pravne
+                pomoći, uvek prilagođena potrebama klijenata za postizanje njihovih željenih ciljeva. Svojim
+                radom, koji u prvi plan stavlja potrebe klijenata s ciljem ostvarenja vrhunskih rezultata
+                advokatska kancelarija nameće visoke standarde. Posebna pažnja usmerena je na svaki predmet,
+                svakog klijenta, pošteno i transparentno. Advokatska kancelarija pristupa predano i
+                individualistički težeći pružati najsavremenija kreativna rešenja i za najsloženija pravna pitanja.
+                </p>
+            </article>
+            <article class="second">
+                <h3>Biografija</h3>
+                <hr>
+                <p>
+                    <i class="fas fa-user-graduate"></i> Master studije: Pravni fakultet u Novom Sadu, Univerzitet u Novom Sadu<br>
+                    <i class="fas fa-user-graduate"></i> Osnovne studije: Pravni fakultet u Novom Sadu, Univerzitet u Novom Sadu<br>
+                    <i class="fas fa-scroll"></i> Položen pravosudni ispit<br>
+                    <i class="fas fa-scroll"></i> Položen advokatski ispit<br>
+                    <i class="fas fa-scroll"></i> Sertifikat za odbranu maloletnih učinilaca krivičnih dela i zastupanje oštećenih maloletnika u
+                    krivičnom postupku.<br>
+                </p>
+            </article>
     </section>

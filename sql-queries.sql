@@ -26,5 +26,5 @@ CREATE TABLE posts(
 
 insert into users values(null,'Tatjana Gulušac','tatjanaglusac1991@gmail.com','limunada');
 
-insert into sf_post_status values(null,'Aktivno');
-insert into sf_post_status values(null,'Neaktivno');
+insert into sf_post_status values(null,'Aktivan');
+insert into sf_post_status values(null,'Neaktivan');

@@ -10,7 +10,7 @@
     <?php endif; ?>
 
     <!-- contact form -->
-    <section class="logInForm container">
+    <section class="logInForm container" id="logInForm">
             <h2>Log in</h2>
             <hr>
             <form action="files/log-in.php" method="POST" autocomplete="on">

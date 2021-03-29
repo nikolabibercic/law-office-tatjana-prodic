@@ -27,14 +27,14 @@
             </article>
         </section>
         <ul>
-            <li><a href="https://www.facebook.com/advokatprodic"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="https://instagram.com/advokatska_kancelarija_prodic?igshid=crop7qcvv9y0"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="https://twitter.com/tanjicatajci?lang=en"><i class="fab fa-twitter"></i></a></li>
-            <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://www.facebook.com/advokatprodic" target="_blank"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://instagram.com/advokatska_kancelarija_prodic?igshid=crop7qcvv9y0" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/tanjicatajci?lang=en" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/advokatska-kancelarija-tatjane-prodi%C4%87/?viewAsMember=true" target="_blank"><i class="fab fa-linkedin"></i></a></li>
         </ul>
         
         <?php if(!isset($_SESSION['user'])): ?>
-            <p>&copy; Advokatska kancelarija Tatjane Prodić<a href="page-log-in.php"><i class="fas fa-sign-in-alt"></i></a></p>
+            <p>&copy; Advokatska kancelarija Tatjane Prodić<a href="page-log-in.php#logInForm"><i class="fas fa-sign-in-alt"></i></a></p>
         <?php else: ?>
             <p>&copy;Advokatska kancelarija Tatjane Prodić<a href="files/log-out.php"><i class="fas fa-sign-in-alt" style="color:green;"></i></a></p>
         <?php endif; ?>     
