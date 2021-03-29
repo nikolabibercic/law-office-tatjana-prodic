@@ -87,11 +87,14 @@ top bar
             color: $white;
             font-size: 1.2rem;
             font-weight: 800;
+            @media(max-width: 767px) {
+                font-size: 1rem;
+            }
         }
         ul {
             @include flex(space-between,center,row);
             li {
-                margin: 0 10px;
+                padding: 0 10px;
                 a {
                     font-size: 2rem;     
                     color: red; 
@@ -331,6 +334,7 @@ contact form
                 font-size: 1rem;
                 color: $primary;
                 margin-bottom: 10px;
+                text-align: justify;
             }  
             form {
                 @include flex(space-between,center,column);

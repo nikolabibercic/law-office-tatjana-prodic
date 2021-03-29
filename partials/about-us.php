@@ -10,7 +10,7 @@
                 radom, koji u prvi plan stavlja potrebe klijenata s ciljem ostvarenja vrhunskih rezultata
                 advokatska kancelarija nameće visoke standarde. Posebna pažnja usmerena je na svaki predmet,
                 svakog klijenta, pošteno i transparentno. Advokatska kancelarija pristupa predano i
-                individualistički težeći pružati najsavremenija kreativna rešenja i za najsloženija pravna pitanja.
+                individualistički, težeći pružati najsavremenija kreativna rešenja i za najsloženija pravna pitanja.
                 </p>
             </article>
             <article class="second">

@@ -1,14 +1,14 @@
 <?php
     class Connection {
-        // public $host = 'localhost';
-        // public $dbname = 'law_office';
-        // public $username = 'root';
-        // public $password = '';
-
         public $host = 'localhost';
-        public $dbname = 'advokatp_law_office';
-        public $username = 'advokatp_tatjanaprodic';
-        public $password = 'slonovaca1.';
+        public $dbname = 'law_office';
+        public $username = 'root';
+        public $password = '';
+
+        // public $host = 'localhost';
+        // public $dbname = 'advokatp_law_office';
+        // public $username = 'advokatp_tatjanaprodic';
+        // public $password = 'slonovaca1.';
 
         public function connect(){
             try{
