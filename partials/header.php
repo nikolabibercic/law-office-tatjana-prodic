@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="keywords" content="Advokat Novi Sad, Advokat, Advokat za razvode, razvod">
+    <meta name="keywords" content="Advokat Novi Sad, advokat u novom sadu, advokati u novom sadu, najbolji advokat u novom sadu, najbolji advokati u novom sadu, Advokat, Advokat za razvode, razvod, advokat novi sad porodicno pravo, advokat novi sad razvod, advokat novi sad posao, advokat novi sad radno pravo, advokat novi sad krivicno pravo, advokat novi sad alimentacija, alimentacija, porodicno pravo, radno pravo, krivicno pravo">
     <meta name="description" content="Advokatska kancelarija Tatjane Prodić">
     <meta name="author" content="Tatjana Prodić">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
